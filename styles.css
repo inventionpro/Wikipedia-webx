@@ -1,4 +1,9 @@
+/* bussinga! */
 body {
   color: #000;
   background-color: #ffffff;
+}
+p {
+  white-space: break-spaces;
+  word-break: break-word;
 }
