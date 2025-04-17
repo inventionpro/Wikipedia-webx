@@ -7,7 +7,9 @@ get('search').on_click(function()
     end
     local res = fetch({
         url = "https://api.fsh.plus/wikipedia?page=" .. get('query').get_contents() .. extra,
-        method = "GET"
+        method = "GET",
+        headers = { ["Content-Type"] = "application/json" },
+        body = ''
     })
 
     get('title').set_contents(res.title)
