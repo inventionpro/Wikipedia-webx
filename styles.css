@@ -1,7 +1,9 @@
 /* bussinga! */
+/* ^ Still works on non bussinga tho */
 body {
   color: #000;
   background-color: #ffffff;
+  overflow: hidden;
 }
 p {
   white-space: break-spaces;
