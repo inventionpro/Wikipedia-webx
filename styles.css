@@ -8,4 +8,17 @@ body {
 p {
   white-space: break-spaces;
   word-break: break-word;
+  font-family: system-ui;
+}
+input {
+  font-family: system-ui;
+}
+button {
+  font-family: system-ui;
+}
+* {
+  font-family: system-ui;
+}
+h1 {
+  font-family: serif;
 }
