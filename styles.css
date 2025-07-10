@@ -28,10 +28,16 @@ p {
   word-break: break-word;
   font-family: system-ui;
 }
+select {
+  color: #f8f9fa;
+  font-family: system-ui;
+}
 input {
+  color: #f8f9fa;
   font-family: system-ui;
 }
 button {
+  color: #f8f9fa;
   font-family: system-ui;
 }
 * {
