@@ -12,6 +12,6 @@ get('search').on_click(function()
         body = ''
     })
 
-    get('title').set_contents(res.title)
+    get('titl').set_contents(res.title)
     get('text').set_contents(res.data)
 end)
