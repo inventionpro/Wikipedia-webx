@@ -14,7 +14,7 @@ function search()
 
     local data = res.data:gsub(">%s+<", "><");
     data = data:gsub('class="link"%s+href="(.-)"', 'onclick="event.preventDefault();document.querySelector(`.query`).value=`%1`.split(`/`).slice(-1)[0];document.querySelector(`.search`).click()"')
-    data = data:gsub('<img src="https://wikipedia.org/wiki/Special:Redirect/file/.-%3A','<img src="https://wikipedia.org/wiki/Special:Redirect/file/')
+    data = data:gsub('<img src="https://wikipedia.org/wiki/Special:Redirect/file/.-%%3A','<img src="https://wikipedia.org/wiki/Special:Redirect/file/')
 
     get('titl').set_contents(res.title)
     get('txt').set_contents(data)
