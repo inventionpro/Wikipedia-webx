@@ -1,8 +1,8 @@
 get('search').on_click(function()
-    local extra = '';
+    local extra = '&lang=' .. get('lang').get_contents();
     if window ~= nil then
         if window.browser == 'bussinga' then
-            extra = '&html=true'
+            extra = extra .. '&html=true'
         end
     end
     local res = fetch({
