@@ -1,9 +1,27 @@
 /* bussinga! */
 /* ^ Still works on non bussinga tho */
 body {
-  color: #000;
-  background-color: #ffffff;
+  color: #202122;
+  background-color: #f8f9fa;
   overflow-x: hidden;
+}
+upper {
+  direction: column;
+  align-items: center;
+}
+.upper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+lower {
+  direction: row;
+  gap: 5px;
+}
+.lower {
+  display: flex;
+  gap: 5px;
+  flex-direction: row;
 }
 p {
   white-space: break-spaces;
