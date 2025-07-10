@@ -13,5 +13,5 @@ get('search').on_click(function()
     })
 
     get('titl').set_contents(res.title)
-    get('text').set_contents(res.data)
+    get('txt').set_contents(res.data:gsub(">%s+<", "><"))
 end)
