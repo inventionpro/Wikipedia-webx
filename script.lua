@@ -13,7 +13,7 @@ function search()
     })
 
     local data = res.data:gsub(">%s+<", "><");
-    data = data:gsub('class="link"%s+href="(.-)"', 'onclick="event.preventDefault();document.querySelector(`query`).value=`%1`.split(`/`).slice(-1)[0];document.querySelector(`search`).click()"')
+    data = data:gsub('class="link"%s+href="(.-)"', 'onclick="event.preventDefault();document.querySelector(`.query`).value=`%1`.split(`/`).slice(-1)[0];document.querySelector(`.search`).click()"')
 
     get('titl').set_contents(res.title)
     get('txt').set_contents(data)
