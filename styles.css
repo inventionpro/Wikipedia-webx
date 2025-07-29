@@ -4,6 +4,7 @@ body {
   color: #202122;
   background-color: #f8f9fa;
   overflow-x: hidden;
+  align-items: center;
 }
 upper {
   direction: column;
